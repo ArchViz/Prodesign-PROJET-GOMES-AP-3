@@ -54,9 +54,10 @@
             <img id="Scene-7" src="./Style/Images/Scene-7.jpg">
             <img id="Scene-8" src="./Style/Images/Scene-8.jpg">
             <img id="Scene-9" src="./Style/Images/Scene-9.jpg">
-            <img id="Scene-10" src="./Style/Images/Scene-10.jpg">
             <img id="Scene-11" src="./Style/Images/Scene-11.jpg">
             <img id="Scene-12" src="./Style/Images/Scene-12.jpg">
+            <img id="Scene-13" src="./Style/Images/Scene-13.jpg">
+            <img id="Scene-14" src="./Style/Images/Scene-14.jpg">
         </a-assets>
 
         <a-entity laser-controls="hand: left"
@@ -159,6 +160,12 @@
                 material="src: #Arrow-1; transparent:true"
                 the_dote="Name_of_dote: Dote-0  ; Group_to_activate: Group-0 ; The_rotation: 0">
             </a-plane>
+            <a-plane data-clickable scale='0.9 0.9 0.9' opacity='.5' class="pintings clickable"
+                position="0.40424 -1.27619 4.13563" rotation="-83.4753670881999 146.82215387565887 123.65575134513426"
+                material="src: #Arrow-1; transparent:true"
+                the_dote="Name_of_dote: Dote-14  ; Group_to_activate: Group-14 ; The_rotation: 0">
+            </a-plane>
+
 
         </a-entity>
         <!-- Group-6 -->
@@ -227,7 +234,7 @@
             <a-plane data-clickable scale='0.9 0.9 0.9' opacity='.5' class="pintings clickable"
                 position="-0.31794 -1.61104 6.6693" rotation="-77.09720091280357 -179.50022876315023 84.84702804974309"
                 material="src: #Arrow-1; transparent:true"
-                the_dote="Name_of_dote: Dote-12  ; Group_to_activate: Group-12 ; The_rotation: 0">
+                the_dote="Name_of_dote: Dote-13  ; Group_to_activate: Group-13 ; The_rotation: 0">
             </a-plane>
             <!--  -->
 
@@ -240,6 +247,33 @@
                 position="3.4334 -1.61104 -0.32188" rotation="-74.98642439554162 -80.96180124096097 -8.259186616810817"
                 material="src: #Arrow-1; transparent:true"
                 the_dote="Name_of_dote: Dote-9  ; Group_to_activate: Group-9 ; The_rotation: 0">
+            </a-plane>
+
+
+        </a-entity>
+        <!-- Group-13 -->
+        <a-entity scale="0 0 0" rotation="0 -90 0" class="groups" id="Group-13" visible="false">
+
+            <a-plane data-clickable scale='0.9 0.9 0.9' opacity='.5' class="pintings clickable"
+                position="0.26782 -1.61104 -6.02277" rotation="-69.52499069235462 4.206083174055373 -93.52561977258968"
+                material="src: #Arrow-1; transparent:true"
+                the_dote="Name_of_dote: Dote-9  ; Group_to_activate: Group-9 ; The_rotation: 0">
+            </a-plane>
+
+            <a-plane data-clickable scale='0.9 0.9 0.9' opacity='.5' class="pintings clickable"
+                position="-2.96409 -1.61104 3.50101" rotation="-70.3890110474119 110.84498800380419 160.50610489676828"
+                material="src: #Arrow-1; transparent:true"
+                the_dote="Name_of_dote: Dote-14  ; Group_to_activate: Group-14 ; The_rotation: 0">
+            </a-plane>
+
+        </a-entity>
+        <!-- Group-14 -->
+        <a-entity scale="0 0 0" rotation="0 -90 0" class="groups" id="Group-14" visible="false">
+
+            <a-plane data-clickable scale='0.9 0.9 0.9' opacity='.5' class="pintings clickable"
+                position="0.26782 -1.61104 -6.02277" rotation="-69.52499069235462 4.206083174055373 -93.52561977258968"
+                material="src: #Arrow-1; transparent:true"
+                the_dote="Name_of_dote: Dote-5  ; Group_to_activate: Group-5 ; The_rotation: 0">
             </a-plane>
 
 
@@ -272,7 +306,7 @@
             the_group_to_activate.setAttribute('visible', 'true')
             the_group_to_activate.setAttribute('scale', '1 1 1')
         }
-        setStrat(0)
+        setStrat(5)
         //############################################
         AFRAME.registerComponent('the_dote', {
             schema: { Name_of_dote: { type: 'string', default: '#Name', }, Group_to_activate: { type: 'string', default: '#Position', }, The_rotation: { type: 'string', default: '0', } },
